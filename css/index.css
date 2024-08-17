@@ -1,0 +1,353 @@
+body {
+    background:
+    -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url('/images/topography-background.png');  
+    margin:0;
+    background-attachment: fixed;
+}
+
+.main-container {
+    background-color: antiquewhite;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 190vh;
+    margin-top: 2%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;    
+}
+
+#panel {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.our-mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bluee;
+    height: 30%;
+    width: 100%;
+}
+
+.our-mission img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.h1 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.our-mission h1 {
+    color: rgb(3, 86, 3);
+
+}
+.mission-texts {
+    background-color: yeellow;
+    color: white;
+    position: absolute;
+    height: 25rem;
+    margin-top: 7.5rem;
+    width: 40%;
+    justify-content: center;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(/images/index/mission-background.jpg);
+}
+.missions-h2 {
+    font-size: 0.8rem;
+    height: 6%;
+    padding-top: 5%;
+}
+.h2 {
+    display: flex;
+    justify-content: center;
+}
+.missions-p{
+    background-color: gren;
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.paragraph {
+    margin-left: .625rem;
+    margin-right: .625rem;
+    background-color:wheat;
+    font-size: 1.4rem;
+    text-align: center;
+    height: 50%;
+    max-width: 30%;
+}
+
+.cri-panel {
+    background-color: green;
+    display: flex;
+    height: 25%;    
+}
+.cri-img {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-right: 1rem;
+}
+
+.cri-img img {
+    height: 100%;
+    background-color: black;
+}
+.cri-text {
+    background-color: bluee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-left: 1rem;
+}
+.cri-h1 {
+    background-color: breown;
+    line-height: 2em;
+    color: rgb(3, 86, 3);
+    width: 93%;
+}
+
+.cri-h3 {
+    background-color: wheite;
+    margin-top:0;
+    color: rgb(3, 86, 3);
+    font-size: 1.3rem;
+}
+
+.cri-h1:hover, .eao-h1:hover, .eao-btn button:hover {
+    transition: 0.3s ease;
+    transform: scale(1.03);
+    color: #caac00;
+}
+
+.eao {
+    background-color: yeellow;
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+}
+
+.eao-img img {
+    width: 22.8rem;
+    height: 15.62rem;
+    object-fit: cover;
+}
+.eao-h1 {
+    background-color: bluee;
+    text-align: end;
+    line-height: 1.5em;
+    height: 50%;
+    color: rgb(3, 86, 3);
+}
+
+.eao-p {
+    color:white;
+    height: 35%;
+    background-color: black;
+    opacity: 60%;
+    width: 70%;
+    margin-left: auto;
+    justify-content: center;
+    display: flex;
+}
+.eao-p p {
+    background-color: greeen;
+    opacity: 100%;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: auto; 
+    margin-bottom: auto; 
+    
+}
+.eao-lPanel {
+    background-color: greeen;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding-right: 1rem;
+}
+
+.eao-rPanel {
+    width: 50%;
+    background-color: aquea;
+    padding-left: 1rem;
+}
+
+.eao-btn {
+    background-color: yeellow;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2.81rem;
+}
+
+.eao-btn button {
+    width: 60%;
+    height: 30%;
+    color: white;
+    background-color: rgb(1, 64, 1);
+    font-size: 1rem;
+}
+.hotlinks-container {
+    background-color: beurlywood;
+    margin-top: 2%;
+    width: 50%;
+    height: 15.62rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.container-one, .container-two, .container-three {
+    background-color: bluee;
+    color: white;
+    width: 30%;
+    height: 15.62rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-one {
+    margin-left: 2%;
+}
+.container-three {
+    margin-right: 2%;
+}
+
+.description {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: 1.2rem;
+    padding-bottom: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#h1-title {
+    font-size: 1.5rem;
+    height: 20%;
+}
+
+.hotlinks-container p {
+    height: 60%;
+}
+.hotlinks-container button {
+    width: 70%;
+    height: 3.75rem;
+    color: white;
+    background-color: #caac00;
+    border-color: #caac00;
+}
+
+.filler-container h1 {
+    visibility: hidden;
+}
+
+.footer-container {
+    width: 50%;
+    height: 15.625rem;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(/images/index/mission-background.jpg);
+}
+
+.h1-container {
+    background-color:aquamarinee;
+    height: 20%;
+    font-size: 1em;
+}
+
+.links-container {
+    background-color: bluee;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    padding-left: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.left-links {
+    background-color: greeen;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.right-links {
+    background-color: oranege;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.column-one {
+    background-color: aquea;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    width: 50%;
+    justify-content: end;
+    padding-right: 1rem;
+}
+.column-two {
+    background-color:beigee;
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    text-align: start;
+    justify-content: end;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.column-two a, .column-one a {
+    text-decoration: none;
+    color: white;
+}

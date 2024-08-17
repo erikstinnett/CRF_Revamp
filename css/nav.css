@@ -1,0 +1,253 @@
+.navbar {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 10%;
+  padding-top: .625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+} 
+.nav_left {
+  background-color: blue;
+  height: 100%;
+  align-items: center;
+  width: 20%;
+  margin-left: 3.125rem;
+}
+
+.logo_container {
+  background-color: wheeat;
+  height: 100%;    
+}
+#logo_img{
+  background-color: green;
+  height: 100%;
+  object-fit: cover;
+  
+}
+/*Right-most section of the navbar. Houses nav links and member login*/
+.nav_right {
+  background-color: yellow;
+  width: 80%;
+  height: 100%;
+  position: relative;
+  justify-content: right;
+  display: flex;
+  margin-right: 3.125rem;
+}
+.links-group {
+  height: 100%;
+  background-color: bisque;
+  display: grid;
+  width: 70%;
+  align-items: center;
+}
+.nav_links {
+  width: 100%;
+  float:right;
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+}
+
+#logo_img {
+  width: 6rem;
+  height: auto;
+}
+.member_login{
+  margin-top: 1rem;
+  width: 60%;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.fin-group {
+  display: flex;
+  flex-direction: column;
+}
+.member_login a{
+  width: 100%;
+  justify-self: right;
+  display: flex;
+  justify-content: center;
+  color:white;
+  text-decoration: none;
+}
+
+   .dropdown {
+    width: 12.5rem;
+    background-color: blue;
+   }
+   .drop-link{
+    color:white;
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: bleue;
+   }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 12.5rem;    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color:#caac00;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .drop-link {
+    color:#caac00;
+    transition: all 0.8s ease;
+  }
+  .member_login a:hover{
+    color:#caac00;
+  }
+
+  @media screen and (max-width: 1800px) {
+    .navbar {
+      background: rgba(0,0,0,0.5);
+      width: 100%;
+      height: 10%;
+      padding-top: .625rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    } 
+    .nav_left {
+      background-color: blue;
+      height: 100%;
+      align-items: center;
+      width: 20%;
+      margin-left: 3.125rem;
+    }
+    
+    .logo_container {
+      background-color: wheeat;
+      height: 100%;    
+    }
+    #logo_img{
+      background-color: green;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+    /*Right-most section of the navbar. Houses nav links and member login*/
+    .nav_right {
+      background-color: yellow;
+      width: 80%;
+      height: 100%;
+      position: relative;
+      justify-content: right;
+      display: flex;
+      margin-right: 3.125rem;
+    }
+    .links-group {
+      height: 100%;
+      background-color: bisque;
+      display: grid;
+      width: 70%;
+      align-items: center;
+    }
+    .nav_links {
+      width: 100%;
+      float:right;
+      display: flex;
+      justify-content: space-between;
+      background-color: orange;
+    }
+    
+    #logo_img {
+      width: 6rem;
+      height: auto;
+    }
+    .member_login{
+      margin-top: 1rem;
+      width: 60%;
+      display: flex;
+      justify-self: center;
+      align-self: center;
+    }
+    
+    .fin-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .member_login a{
+      width: 100%;
+      justify-self: right;
+      display: flex;
+      justify-content: center;
+      color:white;
+      text-decoration: none;
+    }
+    
+       .dropdown {
+        width: 12.5rem;
+        background-color: blue;
+       }
+       .drop-link{
+        color:white;
+        font-size: 1.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: bleue;
+       }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 10rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        width: 12.5rem;    
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 1.5rem;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        color:#caac00;
+        transition: all 0.2s ease;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .drop-link {
+        color:#caac00;
+        transition: all 0.8s ease;
+      }
+      .member_login a:hover{
+        color:#caac00;
+      }
+  }

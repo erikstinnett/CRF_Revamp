@@ -1,0 +1,4 @@
+- pixels only for borders
+- % for width 
+- font sizes kept to REM (MAYBE EM if you want relative)
+    - relative to parent container
