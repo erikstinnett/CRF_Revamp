@@ -1,0 +1,122 @@
+:root {
+    --color-bg: #fff6ea;
+    --color-text: #333333;
+    --color-primary: #caac0e;
+    --color-secondary: #678ba6;
+    --max-width: 1200px;
+    --spacing: 1rem;
+    --font-sans: 'Helvetica Neue', Arial, sans-serif;
+    --font-serif: 'Times New Roman', Times, serif;
+    --gutter: 1rem;
+    --overlay: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Global reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Base typography & body */
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--color-text);
+    line-height: 1.6;
+    background: linear-gradient(var(--overlay), var(--overlay)),
+                url('/images/topography-background.png') center/cover fixed no-repeat;
+  }
+  
+  /* Header section */
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--spacing);
+  }
+  .header-container .img-container {
+    width: 100%;
+    max-height: 60vh;
+    overflow: hidden;
+  }
+  .header-container .img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  #header-h1 {
+    margin: var(--spacing) 0;
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    letter-spacing: 4px;
+    text-align: center;
+    color: var(--color-text);
+    width: 100%;
+  }
+  
+  /* Body content */
+  .body-container {
+    width: 100%;
+    max-width: 70ch;
+    margin: var(--spacing) auto;
+  }
+  .body-text {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    line-height: 1.8;
+  }
+  
+  /* Footer section */
+  .footer-container {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('/images/index/mission-background.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: calc(var(--spacing) * 2) var(--spacing);
+  }
+  .footer-container .h1-container {
+    text-align: center;
+    margin-bottom: var(--spacing);
+  }
+  .footer-container .h1-container h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin: 0;
+    color: #fff;
+  }
+  .footer-container .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--gutter);
+  }
+  .footer-container .left-links,
+  .footer-container .right-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-container .right-links {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .footer-container .right-links .column-one,
+  .footer-container .right-links .column-two {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-container a,
+  .footer-container span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .footer-container a:hover {
+    color: #caac00;
+  }
+
+  

@@ -1,353 +1,794 @@
 body {
-    background:
-    -webkit-gradient(
+  /* Modern gradient syntax first (keeps same look) */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/topography-background.png");
+
+  /* Legacy WebKit syntax kept for older browsers */
+  background: -webkit-gradient(
       linear,
-      left top, left bottom,
+      left top,
+      left bottom,
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url('/images/topography-background.png');  
-    margin:0;
-    background-attachment: fixed;
+    url("/images/topography-background.png");
+
+  margin: 0;
+  background-attachment: fixed;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-container {
-    background-color: antiquewhite;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 190vh;
-    margin-top: 2%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;    
+  background-color: antiquewhite;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 130vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
 }
 
 #panel {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  margin-bottom: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: oreange;
 }
 
 .our-mission {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: bluee;
-    height: 30%;
-    width: 100%;
-}
-
-.our-mission img {
-    height: 25rem;
-    width: 100%;
-    object-fit: cover;
-    opacity: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
 .h1 {
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  background-color: yeellow;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
+#our-mission-h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
 .our-mission h1 {
-    color: rgb(3, 86, 3);
-
+  color: rgb(3, 86, 3);
 }
 .mission-texts {
-    background-color: yeellow;
-    color: white;
-    position: absolute;
-    height: 25rem;
-    margin-top: 7.5rem;
-    width: 40%;
-    justify-content: center;
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
+  color: white;
+  height: 22rem;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/index/mission-background.jpg);
 }
+
 .missions-h2 {
-    font-size: 0.8rem;
-    height: 6%;
-    padding-top: 5%;
+  height: 6%;
+  padding-top: 5%;
+  background-color: yeellow;
 }
 .h2 {
-    display: flex;
-    justify-content: center;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  background-color: oranege;
 }
-.missions-p{
-    background-color: gren;
-    display: flex;
-    justify-content: space-between;
-    height: 90%;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
+.missions-p {
+  background-color: greeen;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .paragraph {
-    margin-left: .625rem;
-    margin-right: .625rem;
-    background-color:wheat;
-    font-size: 1.4rem;
-    text-align: center;
-    height: 50%;
-    max-width: 30%;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  background-color: wheeat;
+  font-size: 1.4rem;
+  text-align: center;
+  height: 50%;
+  max-width: 30%;
 }
 
 .cri-panel {
-    background-color: green;
-    display: flex;
-    height: 25%;    
+  background-color: greeen;
+  display: flex;
+  height: 25%;
+  width: 40%;
+  align-items: center;
 }
 .cri-img {
-    background-color: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding-right: 1rem;
+  background-color: yeellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding-right: 1rem;
 }
 
 .cri-img img {
-    height: 100%;
-    background-color: black;
+  width: 22.8rem;
+  height: 22.8rem;
+  background-color: blacek;
+  margin-left: 10%;
 }
 .cri-text {
-    background-color: bluee;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    padding-left: 1rem;
+  background-color: bluee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+  padding-left: 1rem;
 }
-.cri-h1 {
-    background-color: breown;
-    line-height: 2em;
-    color: rgb(3, 86, 3);
-    width: 93%;
+.cri-h1,
+.eao-h1 {
+  background-color: breown;
+  line-height: 2em;
+  color: rgb(3, 86, 3);
+  width: 100%;
 }
 
+#crih1,
+#eaoh1 {
+  font-size: 3rem;
+}
+
+.cri-h1 h1,
+.eao-h1 h1 {
+  background-color: whitee;
+  width: 100%;
+}
+/*Affects format of EAO H1s*/
+#eaoh1 {
+  background-color: whitee;
+  justify-content: flex-end;
+}
+.eao-h1 {
+  margin-top: 2%;
+}
 .cri-h3 {
-    background-color: wheite;
-    margin-top:0;
-    color: rgb(3, 86, 3);
-    font-size: 1.3rem;
+  background-color: whitee;
+  margin-top: 0;
+  color: rgb(3, 86, 3);
+  font-size: 1.3rem;
 }
 
-.cri-h1:hover, .eao-h1:hover, .eao-btn button:hover {
-    transition: 0.3s ease;
-    transform: scale(1.03);
-    color: #caac00;
+.cri-h1:hover,
+.eao-h1:hover,
+.eao-btn button:hover {
+  transition: 0.3s ease;
+  transform: scale(1.03);
+  color: #caac00;
 }
 
 .eao {
-    background-color: yeellow;
-    display: flex;
-    flex-direction: row;
-    height: 25%;
+  background-color: yeellow;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
 .eao-img img {
-    width: 22.8rem;
-    height: 15.62rem;
-    object-fit: cover;
-}
-.eao-h1 {
-    background-color: bluee;
-    text-align: end;
-    line-height: 1.5em;
-    height: 50%;
-    color: rgb(3, 86, 3);
+  width: 22.8rem;
+  height: 15.62rem;
+  object-fit: cover;
+  margin-top: 1%;
 }
 
 .eao-p {
-    color:white;
-    height: 35%;
-    background-color: black;
-    opacity: 60%;
-    width: 70%;
-    margin-left: auto;
-    justify-content: center;
-    display: flex;
+  width: 70%;
+  margin-left: auto;
+  justify-content: center;
+  display: flex;
 }
 .eao-p p {
-    background-color: greeen;
-    opacity: 100%;
-    font-size: 1.1em;
-    text-align: center;
-    margin-top: auto; 
-    margin-bottom: auto; 
-    
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 100%;
+  font-size: 1.2em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
 }
 .eao-lPanel {
-    background-color: greeen;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    padding-right: 1rem;
+  background-color: greeen;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  padding-right: 1rem;
 }
-
+.eao-tlPanel {
+  background-color: orangee;
+  height: 70%;
+  align-items: center;
+  display: flex;
+}
+.eao-blPanel {
+  background-color: wheite;
+  height: 30%;
+  align-items: flex-start;
+  display: flex;
+}
+.eao-trPanel {
+  background-color: yelleow;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+.eao-brPanel {
+  background-color: purpele;
+  height: 30%;
+  align-items: flex-start;
+  display: flex;
+  padding-top: 1%;
+}
 .eao-rPanel {
-    width: 50%;
-    background-color: aquea;
-    padding-left: 1rem;
+  width: 50%;
+  background-color: aqueea;
+  padding-left: 1rem;
 }
 
+/* merged both .eao-btn blocks (identical visuals) */
 .eao-btn {
-    background-color: yeellow;
-    height: 45%;
-    display: flex;
-    align-items: center;
-    padding-bottom: 2.81rem;
+  margin-top: 4%;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: rgb(3, 86, 3);
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, 0.15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
 }
 
-.eao-btn button {
-    width: 60%;
-    height: 30%;
-    color: white;
-    background-color: rgb(1, 64, 1);
-    font-size: 1rem;
+/* single consolidated hover rule */
+.eao-btn:hover {
+  background-color: rgb(3, 139, 3);
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+  box-shadow: rgba(39, 174, 96, 0.2) 0 6px 12px;
 }
+
+.eao-btn:active {
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
 .hotlinks-container {
-    background-color: beurlywood;
-    margin-top: 2%;
-    width: 50%;
-    height: 15.62rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 5%;
+  background-color: beurlywood;
+  margin-top: 2%;
+  width: 50%;
+  height: 15.62rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5%;
 }
 
-.container-one, .container-two, .container-three {
-    background-color: bluee;
-    color: white;
-    width: 30%;
-    height: 15.62rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-one,
+.container-two,
+.container-three {
+  background-color: bluee;
+  color: white;
+  width: 30%;
+  height: 15.62rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-one {
-    margin-left: 2%;
+  margin-left: 2%;
 }
 .container-three {
-    margin-right: 2%;
+  margin-right: 2%;
 }
 
 .description {
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    font-size: 1.2rem;
-    padding-bottom: 8%;
-    padding-left: 5%;
-    padding-right: 5%;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  font-size: 1.2rem;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #h1-title {
-    font-size: 1.5rem;
-    height: 20%;
+  font-size: 1.5rem;
+  height: 20%;
 }
 
 .hotlinks-container p {
-    height: 60%;
+  height: 60%;
 }
-.hotlinks-container button {
-    width: 70%;
-    height: 3.75rem;
-    color: white;
-    background-color: #caac00;
-    border-color: #caac00;
+/* CSS */
+.hotlinks-btn {
+  background-color: #fbeee0;
+  border: 2px solid #caac00;
+  border-radius: 30px;
+  box-shadow: #847001 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.hotlinks-btn:hover {
+  background-color: #fff;
+}
+
+.hotlinks-btn:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .hotlinks-btn {
+    min-width: 120px;
+    padding: 0 25px;
+  }
 }
 
 .filler-container h1 {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-.footer-container {
-    width: 50%;
-    height: 15.625rem;
-    color: white;
+@media screen and (max-width: 1800px) {
+  .paragraph {
+    font-size: 1.2rem;
+  }
+  .h2 {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 1640px) {
+  .paragraph {
+    font-size: 1.1rem;
+  }
+  .h2 {
+    font-size: 1.08rem;
+  }
+}
+@media screen and (max-width: 1578px) {
+  #h1-title {
+    font-size: 1.3rem;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+  .hotlinks-btn {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1530px) {
+  .main-container {
+    width: 60%;
+  }
+  .our-mission {
+    width: 60%;
+  }
+  #mission-panel {
+    width: 60%;
+  }
+  .our-mission h1 {
+    background-color: greeen;
+    font-size: 2.5rem;
+  }
+  .mission-texts {
+    background-color: aquea;
+  }
+  .h2 {
+    background-color: orangee;
+    height: 2rem;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1%;
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(/images/index/mission-background.jpg);
+  }
+  .missions-h2 h2 {
+    font-size: 1.15rem;
+  }
+
+  .paragraph {
+    font-size: 1.1rem;
+  }
+  .hotlinks-container {
+    width: 60%;
+  }
 }
 
-.h1-container {
-    background-color:aquamarinee;
-    height: 20%;
-    font-size: 1em;
+@media screen and (max-width: 1460px) {
+  .paragraph {
+    font-size: 1.1rem;
+  }
+  .h2 {
+    font-size: 0.9rem;
+  }
 }
 
-.links-container {
-    background-color: bluee;
-    display: flex;
-    flex-direction: row;
-    height: 80%;
+@media screen and (max-width: 1460px) {
+  .missions-h2 h2 {
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .eao-img img {
+    width: 95%;
+  }
+  .eao-tlPanel {
+    height: 60%;
+  }
+  .eao-trPanel {
+    height: 60%;
+  }
+}
+@media screen and (max-width: 1266px) {
+  #h1-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .cri-img {
+    padding-right: 2rem;
+    height: 130%;
+  }
+  .cri-text {
     padding-left: 0.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.left-links {
-    background-color: greeen;
+  }
+  .cri-img img {
     height: 100%;
-    width: 50%;
+    width: auto;
+  }
+  #crih1,
+  #eaoh1 {
+    font-size: 2.5rem;
+  }
+  .eao-p p {
+    font-size: 1em;
+  }
+  .eao-p {
+    width: 80%;
+  }
+  .eao-btn {
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #crih1,
+  #our-mission-h1 {
+    font-size: 2.5rem;
+  }
+  .cri-h3 {
+    font-size: 1.2rem;
+  }
+  .eao-tlPanel {
+    height: 50%;
+  }
+  .eao-trPanel {
+    height: 50%;
+  }
+  .eao-img img {
+    width: 110%;
+    height: auto;
+  }
+  .eao {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    align-items: center;
+  }
+  .h1-container {
+    font-size: 0.8em;
+  }
+  .right-links,
+  .left-links {
+    font-size: 0.9rem;
+  }
 }
 
-.right-links {
-    background-color: oranege;
-    width: 50%;
+@media screen and (max-width: 1090px) {
+  .cri-img img {
+    height: 80%;
+  }
+  .eao-p {
+    width: 90%;
+  }
+  .eao-img img {
+    margin-top: 3%;
+    padding-right: 10%;
+  }
+  .column-two {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .missions-h2 h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .eao-tlPanel {
+    height: 40%;
+  }
+  .eao-trPanel {
+    height: 40%;
+  }
+  .eao-p p {
+    height: 100%;
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  }
+  .eao-brPanel {
+    padding-top: 12%;
+  }
+  .eao-p {
+    height: 80%;
+  }
+  .eao-img img {
+    padding-right: 10%;
+  }
+  #h1-title {
+    font-size: 1.1rem;
+  }
 }
 
-.column-one {
-    background-color: aquea;
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    width: 50%;
-    justify-content: end;
-    padding-right: 1rem;
-}
-.column-two {
-    background-color:beigee;
-    display: flex;
-    flex-direction: column;
-    width: 22%;
-    text-align: start;
-    justify-content: end;
-    padding-left: 1rem;
-    padding-right: 0.5rem;
+@media screen and (max-width: 1030px) {
+  .eao-img img {
+    padding-right: 15%;
+  }
 }
 
-.column-two a, .column-one a {
-    text-decoration: none;
+@media screen and (max-width: 1020px) {
+  .eao-img img {
+    padding-right: 20%;
+  }
+  .cri-h1,
+  .eao-h1 {
+    line-height: 1.5em;
+  }
+  .main-container {
+    height: 90vh;
+  }
+  .cri-img {
+    height: 18rem;
+    padding-left: 1%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .column-two {
+    width: 27%;
+  }
+}
+@media screen and (max-width: 930px) {
+  .our-mission h1 {
+    background-color: greeen;
+    font-size: 2rem;
+    width: 100%;
+  }
+  #crih1,
+  #eaoh1 {
+    font-size: 2.2rem;
+  }
+  #cri-h3 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-container {
+    height: 80vh;
+  }
+  .mission-texts {
+    height: 18rem;
+  }
+  .missions-h2 h2 {
+    font-size: 1rem;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .paragraph {
+    font-size: 1rem;
+  }
+  #mission-panel {
+    height: 18rem;
+  }
+  #crih1,
+  #eaoh1 {
+    font-size: 1.7rem;
+  }
+
+  #h1-title {
+    font-size: 1rem;
+  }
+  .description {
+    height: 70%;
+  }
+  .description p {
+    font-size: 1rem;
+  }
+  .hotlinks-btn {
+    font-size: 15px;
+    line-height: 40px;
+  }
+  .container-two button {
+    font-size: 13px;
+  }
+  #h1-title {
+    height: 10%;
+  }
+  .left-links,
+  .right-links {
+    font-size: 0.8rem;
+  }
+  .h1-container {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 830px) {
+  .hotlinks-btn,
+  .container-two button {
+    font-size: 12px;
+  }
+  .cri-img {
+    height: 15rem;
+    padding-left: 1%;
+  }
+  .links-container {
+    padding-right: 3%;
+  }
+  .column-two {
+    width: 30%;
+  }
+  .our-mission {
+    background-color: yeellow;
+  }
+  .missions-h2 {
+    background-color: greeen;
+    width: 100%;
+    height: 20%;
+    padding-top: 0;
+  }
+  .mission-texts {
+    display: flex;
+    flex-direction: column;
+  }
+  .missions-p {
+    height: 80%;
+    background-color: orangee;
+    display: flex; /* Ensures the flex container layout is applied */
+    flex-direction: column;
+    width: 100%;
+    padding: 10px; /* Optional: Adds some spacing inside the parent container */
+  }
+
+  .paragraph {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 60%; /* Fills the width of the parent container */
+    min-width: 60%;
+    height: auto;
     color: white;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #h1-title {
+    background-color: bluee;
+  }
+  .container-one,
+  .container-two,
+  .container-three {
+    background-color: orangereed;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mission-texts {
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .column-two {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #crih1,
+  #eaoh1 {
+    font-size: 1.5rem;
+  }
+  .cri-h1,
+  .eao-h1 {
+    line-height: 1.1rem;
+  }
+  .cri-img {
+    height: 13rem;
+  }
+  .eao-btn {
+    line-height: 0.6;
+    font-size: 13px;
+  }
+  .eao-p {
+    font-size: 0.9rem;
+  }
+  .description {
+    height: 55%;
+  }
+  #h1-title {
+    font-size: 0.8rem;
+  }
+  .description p {
+    font-size: 0.8rem;
+  }
+  .hotlinks-btn {
+    font-size: 10px;
+    line-height: 35px;
+    box-shadow: #847001 3px 3px 0 0;
+  }
+  .footer-container {
+    height: 15rem;
+  }
+  .links-container {
+    padding-right: 3%;
+  }
 }

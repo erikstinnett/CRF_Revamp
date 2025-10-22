@@ -1,0 +1,165 @@
+/* operations.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/topography-background.png') center/cover fixed no-repeat;
+}
+
+.main-container {
+  background-color: var(--color-bg);
+  max-width: var(--max-width);
+  width: 100%;
+  margin: var(--spacing) auto;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+/* Header */
+.header-container {
+  text-align: center;
+  padding-bottom: var(--spacing);
+}
+.header-container img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: var(--spacing);
+}
+.header-h1 {
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.2em;
+  margin-bottom: var(--spacing);
+}
+.header-p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Operations Sections */
+.eastern-ops-container,
+.ozark-ops-container,
+.seqAndKings-ops-container,
+.northwest-ops-container,
+.misc-ops-container {
+  padding: 2rem 0;
+}
+.eastern-ops-container:nth-of-type(2),
+.ozark-ops-container:nth-of-type(3),
+.seqAndKings-ops-container:nth-of-type(4),
+.northwest-ops-container:nth-of-type(5),
+.misc-ops-container:nth-of-type(6) {
+  background-color: rgba(0,0,0,0.05);
+}
+.operations-h1 {
+  font-family: var(--font-serif);
+  color: var(--color-secondary);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* Projects Layout */
+.second-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.img-container {
+  flex: 1;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.project-container {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.project-one,
+.project-two,
+.project-three,
+.project-four,
+.project-five {
+  background-color: #ffffff;
+  padding: var(--spacing);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.project-header {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 1.7rem);
+  margin-bottom: 0.5rem;
+}
+.project-coordinator {
+  font-size: 1rem;
+  margin-bottom: var(--spacing);
+  color: var(--color-primary);
+}
+.project-description {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+ul li {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 600px) {
+  .header-p,
+  .project-coordinator,
+  .project-description {
+    font-size: clamp(1.1rem, 2vw, 1.2rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .second-container {
+    flex-direction: row;
+    gap: calc(var(--spacing) * 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: calc(var(--spacing) * 2);
+  }
+  .img-container {
+    max-width: 35%;
+  }
+  .main-container {
+    padding: var(--spacing) calc(var(--spacing) * 3);
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    max-width: var(--max-width);
+    margin: var(--spacing) auto;
+  }
+}

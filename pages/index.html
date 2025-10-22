@@ -7,10 +7,45 @@
     <link rel="stylesheet" href="/css/hamburger.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/carousel.css">
-    <script src="/js/hamburger.js"></script>
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cave Research Foundation</title>
 </head>
 <body>
+    <div class="off-screen-menu">
+        <ul>
+            <div class="off-screen-links-container">
+                <div class="off-screen-links-group" id="get-involved">
+                    <h1 class="off-screen-h1">Get Involved</h1>
+                    <a href="/pages/get-involved/operations.html">Operations Areas</a>
+                    <a href="/pages/get-involved/membership.html">Membership</a>
+                </div>
+                <div class="off-screen-links-group" id="about-crf">
+                    <h1 class="off-screen-h1">About CRF</h1>
+                    <a href="/pages/about-crf/whatwedo.html">What we do</a>
+                    <a href="/pages/about-crf/officers.html">Officers</a>
+                </div>
+                <div class="off-screen-links-group" id="resources">
+                    <h1 class="off-screen-h1">Resources</h1>
+                    <div class="resources-group-groups">
+                        <div class="resources-group">
+                            <a href="/pages/resources/business.html">Business Page</a>
+                            <a href="https://cavebooks.com">Cave Books</a>
+                            <a href="">Member Login</a>
+                        </div>
+                        <div class="resources-group">
+                            <a href="/pages/about-crf/photos.html">Photos</a>
+                            <a href="/pages/resources/donate.html">Donate</a>
+                            <a href="/pages/resources/grants.html">Grants</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </ul>
+    </div>
     <nav class="navbar">
         <div class="nav_left">
             <div class="logo_container">
@@ -22,38 +57,45 @@
                 <div class="nav_links">
                     <div class="dropdown">
                         <a class="drop-link">Get Involved</a>
-                        <div class="dropdown-content">
-                            <a href="">Operations Areas</a>
-                            <a href="">Membership</a>
+                        <div class="dropdown-content" id="get-involved">
+                            <a href="/pages/get-involved/operations.html">Operations Areas</a>
+                            <a href="/pages/get-involved/membership.html">Membership</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a class="drop-link">About CRF</a>
                         <div class="dropdown-content">
-                            <a href="">What We Do</a>
-                            <a href="">Officers</a>
+                            <a href="/pages/about-crf/whatwedo.html">What We Do</a>
+                            <a href="/pages/about-crf/officers.html">Officers</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a class="drop-link">Resources</a>
-                        <div class="dropdown-content">
-                            <a href="">Business Page</a>
-                            <a href="">Cave Books</a>
-                            <a href="">Grants</a>
+                        <div class="dropdown-content" id="resources">
+                            <a href="/pages/resources/business.html">Business Page</a>
+                            <a href="https://www.cavebooks.com/">Cave Books</a>
+                            <a href="/pages/resources/grants.html">Grants</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a class="drop-link">Photos</a>
+                        <a class="drop-link" href="/pages/about-crf/photos.html">Photos</a>
                     </div>
                     <div class="fin-group">
                         <div class="dropdown">
-                            <a class="drop-link">Donate</a>
+                            <a class="drop-link" href="/pages/resources/donate.html">Donate</a>
                             </div>
                             <div class="member_login">
                                 <a href="//">Member Login</a>
                             </div>
                         </div>
+                        
                     </div>
+                </div>
+            </div>
+            <div class="ham-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
@@ -61,23 +103,23 @@
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/1.jpg" style="width:100%">
+            <img class="carousel-img" src="/images/index/carousel/1.jpg" style="width:100%" decoding="async">
         </div>
         
         <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/2.jpg" style="width:100%">
+            <img class="carousel-img" src="/images/index/carousel/2.jpg" style="width:100%" loading="lazy" decoding="async">
         </div>
         
         <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/3.jpg" style="width:100%">
+            <img class="carousel-img" src="/images/index/carousel/3.jpg" style="width:100%" loading="lazy" decoding="async">
         </div>
 
         <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/4.jpg" style="width:100%">
+            <img class="carousel-img" src="/images/index/carousel/4.jpg" style="width:100%" loading="lazy" decoding="async">
         </div>
 
         <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/5.jpg" style="width:100%">
+            <img class="carousel-img" src="/images/index/carousel/5.jpg" style="width:100%" loading="lazy" decoding="async">
         </div>
 
         <br>
@@ -91,9 +133,9 @@
 
         </div>
     </div>
-    <div class="main-container">
-        <div id="panel" class="our-mission">
-            <h1 class="h1">OUR MISSION</h1>
+    <div class="our-mission">
+        <div class="our-mission-content">
+            <!-- <h1 id="our-mission-h1" class="h1">OUR MISSION</h1> -->
             <div class="mission-texts">
                 <div class="missions-h2">
                     <h2 class="h2">The Cave Research Foundation is a private, non-profit organization dedicated to:</h2>
@@ -104,8 +146,9 @@
                     <div class="paragraph">Promoting the long-term conservation <br> of caves and karst ecosystems.</div>
                 </div>
             </div>
-                <img src="/images/index/mission-background.jpg" alt="">
-        </div>
+        </div>            <!-- <img src="/images/index/mission-background.jpg" alt=""> -->
+    </div>
+    <div class="main-container">
         <div class="news-popup">
         </div>
         <div id="panel" class="cri-panel">
@@ -114,34 +157,40 @@
             </div>
             <div class="cri-text">
                 <div class="cri-h1">
-                    <h1 class="h1">Conservation</h1>
-                    <h1 class="h1">Research</h1>
-                    <h1 class="h1">Interpretation</h1>
+                    <h1 id="crih1" class="h1">Conservation</h1>
+                    <h1 id="crih1" class="h1">Research</h1>
+                    <h1 id="crih1" class="h1">Interpretation</h1>
                 </div>
                 <h3 class="cri-h3">Since 1957</h3>
             </div>
         </div>
         <div id ="panel" class="eao">
             <div class="eao-lPanel">
-                <div class="eao-h1">
-                    <h1 class="h1">Education</h1>
-                    <h1 class="h1">and</h1>
-                    <h1 class="h1">Outreach</h1>
+                <div class="eao-tlPanel">
+                    <div class="eao-h1">
+                        <h1 id="eaoh1" class="h1">Education</h1>
+                        <h1 id="eaoh1" class="h1">and</h1>
+                        <h1 id="eaoh1" class="h1">Outreach</h1>
+                    </div>
                 </div>
-                <div class="eao-p">
-                    <p>CRF is committed to providing educational
-                        outreach to encourage awareness of cave-science,
-                        conservation, and caving safety to school-age 
-                        children.
-                    </p>
+                <div class="eao-blPanel">
+                    <div class="eao-p">
+                        <p>CRF is committed to providing educational
+                            outreach to encourage awareness of cave-science,
+                            conservation, and caving safety to school-age 
+                            children.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="eao-rPanel">
-                <div class="eao-img">
-                    <img src="/images/index/eao.jpg" alt="">
+                <div class="eao-trPanel">
+                    <div class="eao-img">
+                        <img src="/images/index/eao.jpg" alt="">
+                    </div>
                 </div>
-                <div class="eao-btn">
-                    <button>Learn more</button>
+                <div class="eao-brPanel">
+                    <button class="eao-btn" role="button">Learn More</button>
                 </div>
             </div>
             
@@ -152,21 +201,21 @@
             <h1 id="h1-title">STAY CONNECTED</h1>
             <div class="description">
                 <p>Download our quarterly CRF Newsletters</p>
-                <button>Download Options</button>
+                <button class="hotlinks-btn">Downloads</button>
             </div>
         </div>
         <div class="container-two">
             <h1 id="h1-title">SUPPORT CRF</h1>
             <div class="description">
                 <p>Donate to help support CRF and our mission</p>
-                <button>Donate now!</button>
+                <button class="hotlinks-btn">Donate now!</button>
             </div>
         </div>
         <div class="container-three">
             <h1 id="h1-title">CONTACT US</h1>
             <div class="description">
                 <p>Send us a message here!</p>
-                <button>Contact Us</button>
+                <button class="hotlinks-btn">Contact Us</button>
             </div>
         </div>
     </div>
@@ -201,27 +250,38 @@
     </div>
 
     <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 10000); // Change image every 2 seconds
-          
-        }
-        </script>
-        
+      // Carousel: Same visuals, cleaner loop.
+      let slideIndex = 0;
+
+      function showSlide(n) {
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+
+        // guard
+        if (!slides.length) return;
+
+        // hide all
+        for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+        for (let i = 0; i < dots.length; i++) dots[i].classList.remove("active");
+
+        // show current
+        slides[n].style.display = "block";
+        if (dots[n]) dots[n].classList.add("active");
+      }
+
+      function nextSlide() {
+        const slides = document.getElementsByClassName("mySlides");
+        if (!slides.length) return;
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+      }
+
+      // Initialize and start
+      showSlide(slideIndex);
+      // Change image every 10 seconds
+      setInterval(nextSlide, 10000);
+    </script>
+    <script src="/js/app.js" defer></script>
+
 </body>
 </html>

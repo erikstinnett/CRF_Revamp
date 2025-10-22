@@ -1,0 +1,32 @@
+:root {
+    --color-bg: #fff6ea;
+    --color-text: #333333;
+    --color-primary: #caac0e;
+    --color-secondary: #678ba6;
+    --color-panel:    #ffffff;
+    --color-text:     #333333;
+    --color-accent:   #caac0e;
+    --color-muted:    #678ba6;
+    --radius:         0.5rem;
+    --shadow:         0 4px 12px rgba(0,0,0,0.1);
+    --max-width: 1200px;
+    --spacing: 1rem;
+    --font-sans: 'Helvetica Neue', Arial, sans-serif;
+    --font-serif: 'Times New Roman', Times, serif;
+    --gutter: 1rem;
+    --overlay: rgba(0, 0, 0, 0.5);
+
+  }
+
+  /* DONE:
+  Membership
+  Operations
+  officers
+  Footer
+  photos
+  What we do
+  donate
+  business
+  In Progress:
+  
+  */

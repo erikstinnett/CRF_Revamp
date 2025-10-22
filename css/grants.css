@@ -1,0 +1,107 @@
+:root {
+  /* Color Palette */
+  --color-bg-light:  #fff;
+  --color-bg-alt:    #f7f2ec;
+  --color-bg-accent: #e4d8c5;
+  --color-text:      #333;
+  --color-primary:   #caac0e;
+  --color-secondary: #678ba6;
+
+  /* Typography */
+  --font-sans:  'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Georgia', serif;
+
+  /* Layout */
+  --max-width: 900px;
+  --spacing:   1.5rem;
+  --radius:    0.5rem;
+  --transition: 0.3s ease;
+}
+
+/*── Global Reset ─────────────────────────────────────────────────────────────*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('/images/topography-background.png') center/cover fixed no-repeat;
+}
+
+/*── Main Content ────────────────────────────────────────────────────────────*/
+.main-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: var(--spacing) auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.container {
+  background: var(--color-bg-alt);
+  padding: var(--spacing);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.container:nth-child(even) {
+  background: var(--color-bg-accent);
+}
+
+.content {
+  width: 100%;
+}
+
+/* Headings */
+.container h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  color: var(--color-primary);
+  margin-bottom: 0.5em;
+}
+.container h2 {
+  font-family: var(--font-sans);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  color: var(--color-secondary);
+  margin-bottom: 1em;
+}
+
+/* Paragraphs & Lists */
+.p {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  line-height: 1.6;
+  margin-bottom: var(--spacing);
+}
+#container-ul {
+  padding-left: 1.25rem;
+  margin-bottom: var(--spacing);
+}
+#container-ul li {
+  margin-bottom: 0.5em;
+}
+#container-ul li strong {
+  color: var(--color-primary);
+}
+
+/* Past submissions links */
+.a-container {
+  text-align: center;
+  margin-top: var(--spacing);
+}
+.a-container a {
+  display: inline-block;
+  margin: 0 var(--spacing)  var(--spacing) 0;
+  padding: 0.5em 1em;
+  background: var(--color-primary);
+  color: var(--color-bg-light);
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: background var(--transition
+}
