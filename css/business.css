@@ -4,164 +4,114 @@
   padding: 0;
 }
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    color: var(--color-text);
-    line-height: 1.6;
-    background: linear-gradient(var(--overlay), var(--overlay)),
-                url('/images/topography-background.png') center/cover fixed no-repeat;
-  }
-  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  background: linear-gradient(var(--overlay), var(--overlay)),
+    url("/images/topography-background.png") center/cover fixed no-repeat;
+}
+
 .main-container {
-    width: 100%;
-    max-width: var(--max-width);
-    margin: var(--spacing) auto;
-    padding: var(--spacing);
-    background-color: var(--color-bg);
-    display: flex;
-    flex-direction: row;
-    gap: var(--spacing);
+  width: 100%;
+  max-width: var(--max-width);
+  margin: var(--spacing) auto;
+  padding: var(--spacing);
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing);
 }
 
 .main-container a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .h1 {
   color: var(--color-primary);
 }
 .h2 {
   color: var(--color-secondary);
-
 }
 .main-container a:hover {
-    color: #caac00;
+  color: #caac00;
 }
 .info-container {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 1%;
-    padding-right: 1%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .img-container {
-    width: 40%;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .img-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-/* Tablet / small-desktop */
 @media (max-width: 900px) {
-    .main-container {
-      flex-direction: column;     /* stack image + info */
-      align-items: stretch;       /* let children fill the width */
-    }
-  
-    .img-container,
-    .info-container {
-      width: 100%;                /* full width */
-      padding: var(--spacing) 0;  /* vertical breathing room */
-    }
-  
-    .img-container {
-      height: auto;               /* let image size by width */
-    }
-    .img-container img {
-      width: 100%;
-      height: auto;
-    }
+  .main-container {
+    flex-direction: column;
+    align-items: stretch;
   }
-  
-  /* Phablet / large-phone */
-  @media (max-width: 600px) {
-    .info-container h1 {
-      font-size: 1.5rem;          /* scale down headings */
-    }
-    .info-container h2 {
-      font-size: 1.25rem;
-    }
-    .info-container ul li {
-      font-size: 0.95rem;
-    }
+
+  .img-container,
+  .info-container {
+    width: 100%;
+    padding: var(--spacing) 0;
   }
-  
-  /* Small‐phone */
-  @media (max-width: 400px) {
-    .info-container {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-    }
-    .main-container {
-      gap: 0.5rem;                /* less gutter */
-    }
-    .img-container img {
-      object-position: top;       /* focus on top of image if tall */
-    }
+
+  .img-container {
+    height: auto;
   }
-  
-/* 
-@media screen and (max-width: 1900px) {
-    .main-container{
-        height: 110vh;
-    }
+  .img-container img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-@media screen and (max-width: 1170px) {
-    .h1 {
-        font-size: 1.6rem;
-    }
-    .h2 {
-        font-size: 1.2rem;
-    }
-    .ul {
-        font-size: 0.8rem;
-    }
-
-}
-@media screen and (max-width: 1120px) {
-    .h1 {
-        font-size: 1.5rem;
-    }
+/* Phablet / large-phone */
+@media (max-width: 600px) {
+  .info-container h1 {
+    font-size: 1.5rem;
+  }
+  .info-container h2 {
+    font-size: 1.25rem;
+  }
+  .info-container ul li {
+    font-size: 0.95rem;
+  }
 }
 
-@media screen and (max-width: 910px) {
-    .h1 {
-        font-size: 1.4rem;
-    }
-    .h2 {
-        font-size: 1rem;
-    }
-    .ul {
-        font-size: 0.7rem;
-    }
+/* Small‐phone */
+@media (max-width: 400px) {
+  .info-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .main-container {
+    gap: 0.5rem; /* less gutter */
+  }
+  .img-container img {
+    object-position: top;
+  }
 }
-@media screen and (max-width: 800px) {
-    .h1 {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .h1 {
-        font-size: 1.1rem;
-    }
-} */

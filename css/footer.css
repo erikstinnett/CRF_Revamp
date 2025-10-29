@@ -1,7 +1,7 @@
 /* ====== Footer ====== */
 .footer-container {
-  background-color: #2e3531; /* your CRF green */
-  color: #f3e7c7; /* warm tan text for contrast */
+  background-color: #2e3531;
+  color: #f3e7c7;
   padding: 60px 40px 30px;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,6 @@
   font-family: "Times New Roman", serif;
 }
 
-/* Main title */
 .footer-container .h1-container h1 {
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -20,7 +19,6 @@
   text-transform: uppercase;
 }
 
-/* Link layout wrapper */
 .links-container {
   display: flex;
   justify-content: space-between;
@@ -32,7 +30,6 @@
   padding-top: 2rem;
 }
 
-/* Left side info */
 .left-links {
   display: flex;
   flex-direction: column;
@@ -45,7 +42,6 @@
   opacity: 0.9;
 }
 
-/* Right side links */
 .right-links {
   display: flex;
   gap: 4rem;
@@ -62,38 +58,34 @@
 }
 
 .right-links a:hover {
-  color: #c9b98a; /* lighter tan hover */
+  color: #c9b98a;
 }
 
-/* Column groupings */
 .column-one,
 .column-two {
   display: flex;
   flex-direction: column;
 }
 
-/* Copyright / footer bottom */
 .footer-bottom {
   margin-top: 2rem;
   font-size: 0.85rem;
   opacity: 0.7;
 }
-/* ====== Footer (mobile responsive) ====== */
+
 @media (max-width: 640px) {
   .footer-container {
-    color: #f3e7c7; /* tan text */
+    color: #f3e7c7;
     padding: 48px 20px 24px;
     text-align: center;
   }
 
-  /* Title */
   .footer-container .h1-container h1 {
     font-size: 1.4rem;
     letter-spacing: 0.05rem;
     margin-bottom: 1.5rem;
   }
 
-  /* Stack all link areas */
   .links-container {
     display: flex;
     align-items: center;
@@ -102,7 +94,6 @@
     padding-top: 1.5rem;
   }
 
-  /* Left info (address, phone, etc.) */
   .left-links {
     display: flex;
     flex-direction: column;
@@ -112,7 +103,6 @@
     text-align: center;
   }
 
-  /* Right links stacked */
   .right-links {
     display: flex;
     flex-direction: row;
@@ -131,14 +121,12 @@
     color: #c9b98a;
   }
 
-  /* Footer bottom line */
   .footer-bottom {
     margin-top: 1.5rem;
     font-size: 0.8rem;
     opacity: 0.8;
   }
 
-  /* Optional: icon sizing */
   .left-links i {
     font-size: 1.1rem;
     margin: 0 4px;
