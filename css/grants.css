@@ -1,10 +1,7 @@
-/* ====== Grants Page (matches index theme) ====== */
-
-/* Theme tokens (mirror index palette) */
 :root {
-  --color-primary: #1a5132; /* CRF green */
-  --color-secondary: #caac00; /* accent gold */
-  --color-bg-soft: rgb(243, 231, 199); /* warm tan */
+  --color-primary: #1a5132;
+  --color-secondary: #caac00;
+  --color-bg-soft: rgb(243, 231, 199);
   --color-text: #111;
   --max-width: 1200px;
   --spacing: 24px;
@@ -15,7 +12,6 @@
     Arial, "Noto Sans", "Liberation Sans", sans-serif;
 }
 
-/* Page background to match index */
 body {
   min-height: 100vh;
   display: flex;
@@ -27,7 +23,6 @@ body {
     url("/images/topography-background.png") center/cover fixed no-repeat;
 }
 
-/* Main wrapper */
 .main-container {
   width: 100%;
   max-width: var(--max-width);
@@ -38,11 +33,10 @@ body {
   gap: calc(var(--spacing) * 1.25);
 }
 
-/* ====== Header (hero-like) ====== */
 .header-container {
   text-align: center;
   padding: 16px 0 8px;
-  color: #fff; /* sits on dark bg */
+  color: #fff;
 }
 .header-container img {
   width: 100%;
@@ -70,7 +64,6 @@ body {
   opacity: 0.95;
 }
 
-/* ====== Content Sections (cards on soft tan, like index CRI/EAO) ====== */
 .container {
   background: #fff;
   border-radius: var(--radius);
@@ -82,7 +75,6 @@ body {
   margin-top: 8px;
 }
 
-/* alternate band of warm tan behind cards (like index sections) */
 #container-one,
 #container-three {
   background: #fff;
@@ -92,7 +84,7 @@ body {
   background: #fff;
 }
 .container:nth-of-type(even) {
-  outline: 10px solid var(--color-bg-soft); /* subtle band feel */
+  outline: 10px solid var(--color-bg-soft);
   outline-offset: 0;
 }
 
@@ -100,7 +92,6 @@ body {
   padding: clamp(18px, 2.5vw, 32px);
 }
 
-/* Headings inside cards */
 .h1 {
   font-family: var(--font-serif);
   font-weight: 400;
@@ -122,7 +113,6 @@ body {
   margin: 0 0 14px;
 }
 
-/* Lists (fix spacing to feel like index’s body copy) */
 #container-ul,
 .content ul {
   margin: 10px 0 0 1.2rem;
@@ -132,12 +122,10 @@ body {
   margin: 8px 0;
 }
 
-/* Inline emphasis */
 strong {
   font-weight: 600;
 }
 
-/* “Previous Grant Submissions” links as chips, styled like index buttons */
 .a-container {
   display: flex;
   flex-wrap: wrap;
@@ -161,7 +149,6 @@ strong {
   color: #fff;
 }
 
-/* Links inside text */
 .content a:not(#container-a) {
   color: var(--color-primary);
   text-underline-offset: 2px;
@@ -170,7 +157,6 @@ strong {
   color: #0f3b23;
 }
 
-/* ====== Responsive ====== */
 @media (max-width: 992px) {
   .main-container {
     padding: 0 16px;
@@ -194,7 +180,6 @@ strong {
   }
 }
 
-/* ====== Small utilities matching index buttons ====== */
 .button-like {
   display: inline-block;
   padding: 10px 18px;

@@ -1,10 +1,8 @@
-/* ====== Base / Reset ====== */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-/* Fluid type & spacing helpers */
 :root {
   --pad-lg: 40px;
   --pad-md: 24px;
@@ -16,7 +14,6 @@ body {
   padding: 0;
 }
 
-/* ====== Page Background ====== */
 body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/topography-background.png");
@@ -35,7 +32,6 @@ body {
   overflow: hidden;
 }
 
-/* Black overlay layer (only affects background) */
 .hero-container::before {
   content: "";
   position: absolute;
@@ -44,7 +40,6 @@ body {
   z-index: 1;
 }
 
-/* Text and logo */
 .hero-overlay {
   position: relative;
   z-index: 2;
@@ -87,7 +82,6 @@ body {
   opacity: 0.9;
 }
 
-/* ====== Main Layout ====== */
 .main-container {
   width: 100%;
   display: flex;
@@ -95,7 +89,6 @@ body {
   align-items: center;
 }
 
-/* CRI & EAO Sections */
 .cri-container,
 .eao-container {
   display: flex;
@@ -168,7 +161,6 @@ body {
   text-align: justify;
 }
 
-/* EAO alignments */
 .eao-h1 {
   text-align: end;
 }
@@ -198,10 +190,9 @@ button:hover {
   background-color: transparent;
   color: #2e8b57;
 }
-/* === Engage (Donate / Newsletter / Contact) === */
 .engage-container {
   width: 100%;
-  background-color: rgb(243, 231, 199); /* ✅ keep your existing tone */
+  background-color: rgb(243, 231, 199);
   padding: 60px 16px;
 }
 
@@ -219,7 +210,7 @@ button:hover {
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* ensures buttons align */
+  justify-content: space-between;
   align-items: flex-start;
   text-align: left;
   border-radius: 8px;
@@ -300,7 +291,6 @@ button:hover {
   font-size: 0.95rem;
 }
 
-/* Responsive behavior */
 @media (max-width: 992px) {
   .engage-grid {
     grid-template-columns: 1fr 1fr;
@@ -312,7 +302,6 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
-/* === Mobile/Responsive Tweaks === */
 .cri-h1,
 .eao-h1 {
   font-size: clamp(1.6rem, 3vw + 1rem, 2.5rem);
@@ -325,7 +314,6 @@ button:hover {
   font-size: clamp(0.95rem, 0.5vw + 0.8rem, 1.05rem);
 }
 
-/* Large tablets and down */
 @media (max-width: 1200px) {
   .engage-grid {
     max-width: 1000px;
@@ -350,7 +338,6 @@ button:hover {
     padding: 1.25rem;
   }
 
-  /* CRI / EAO: switch to stacked layout, image on top */
   .cri-container,
   .eao-container {
     flex-direction: column;
@@ -367,16 +354,15 @@ button:hover {
   .cri-container img,
   .eao-container img {
     width: 100%;
-    height: auto; /* don't lock to viewport height on mobile */
-    max-height: 60vh; /* safety for very tall images */
+    height: auto;
+    max-height: 60vh;
     object-fit: contain;
   }
   .eao-h1,
   .eao-subtext {
     text-align: left;
-  } /* better readability on mobile */
+  }
 
-  /* Engage cards: 2 columns */
   .engage-container {
     padding: var(--pad-lg) var(--pad-sm);
   }
@@ -392,7 +378,6 @@ button:hover {
 
 /* Phones */
 @media (max-width: 640px) {
-  /* Hero */
   .nav-img {
     height: 60vh;
   }
@@ -407,7 +392,6 @@ button:hover {
     padding: 0 var(--pad-sm);
   }
 
-  /* Global buttons: easy tap targets */
   button,
   .engage-cta {
     width: 100%;
@@ -415,14 +399,12 @@ button:hover {
     padding: 12px 18px;
   }
 
-  /* CRI / EAO text spacing */
   .cri-subtext,
   .eao-subtext {
     font-size: 1.05rem;
     line-height: 1.7rem;
   }
 
-  /* Engage cards: 1 column */
   .engage-grid {
     grid-template-columns: 1fr;
   }
@@ -430,27 +412,17 @@ button:hover {
     min-height: auto;
   }
 
-  /* Contact list readability */
   .contact-list li {
     gap: 10px;
     font-size: 1rem;
   }
 }
 
-/* Very small phones */
 @media (max-width: 400px) {
   .hero-overlay img {
     width: 180px;
   }
   .hero-keywords {
     letter-spacing: 0.06em;
-  }
-}
-
-/* Reduce motion for users who prefer it */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
   }
 }

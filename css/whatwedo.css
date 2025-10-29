@@ -1,27 +1,21 @@
-
-
-/* Global reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Base typography & body */
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    color: var(--color-text);
-    line-height: 1.6;
-    background:
-      linear-gradient(var(--overlay), var(--overlay)),
-      url('/images/topography-background.png') center/cover fixed no-repeat;
-  }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  background: linear-gradient(var(--overlay), var(--overlay)),
+    url("/images/topography-background.png") center/cover fixed no-repeat;
+}
 
-/* Main layout container */
 .main-container {
   width: 100%;
   max-width: var(--max-width);
@@ -33,7 +27,6 @@
   gap: var(--spacing);
 }
 
-/* Header section: image then title */
 .header-container {
   display: flex;
   flex-direction: column;
@@ -63,7 +56,6 @@
   width: 100%;
 }
 
-/* Body content */
 .body-container {
   width: 100%;
   max-width: 70ch;
@@ -90,6 +82,5 @@
 @media (min-width: 1440px) {
   .main-container {
     padding: calc(var(--spacing) * 3);
-    
   }
 }

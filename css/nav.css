@@ -1,4 +1,3 @@
-/* ========== Base ========== */
 body {
   margin: 0;
   padding: 0;
@@ -62,7 +61,6 @@ body {
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
-/* Nested resources layout */
 .resources-group-groups {
   display: flex;
   flex-direction: row;
@@ -128,7 +126,6 @@ body {
   background-color: #fff;
 }
 
-/* ========== Nav image (hero backdrop holder) ========== */
 .nav-img {
   position: relative;
   width: 100%;
@@ -163,7 +160,6 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Left: logo */
 .nav_left {
   display: flex;
   align-items: center;
@@ -185,7 +181,6 @@ body {
   height: auto;
 }
 
-/* Right: links */
 .nav_right {
   display: flex;
   align-items: center;
@@ -235,7 +230,6 @@ body {
   color: #caac00;
 }
 
-/* Dropdowns */
 .dropdown {
   width: 12.5rem;
   position: relative;
@@ -283,34 +277,30 @@ body {
   visibility: hidden;
 }
 
-/* Backdrop behind the slide-out menu */
 .off-screen-backdrop {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 998; /* just under the menu (menu is 999) */
+  z-index: 998;
   opacity: 0;
   transition: opacity 0.25s ease;
-  pointer-events: none; /* disabled until shown */
+  pointer-events: none;
 }
 
-/* When menu is open, show backdrop and lock body scroll */
 body.is-nav-open .off-screen-backdrop {
   opacity: 1;
   pointer-events: auto;
 }
 
 body.is-nav-open {
-  overflow: hidden; /* prevent background scroll */
+  overflow: hidden;
 }
-
 .nav-close {
   font-size: 2rem;
   color: #caac00;
   margin-top: 30px;
 }
 
-/* Large desktop tightening */
 @media (max-width: 1800px) {
   .dropdown {
     width: 10rem;
@@ -371,14 +361,12 @@ body.is-nav-open {
   }
 }
 
-/* Slightly smaller laptops */
 @media (max-width: 1070px) {
   .links-group {
     gap: 1.25rem;
   }
 }
 
-/* Tablet-ish */
 @media (max-width: 960px) {
   .dropdown {
     width: 6rem;
