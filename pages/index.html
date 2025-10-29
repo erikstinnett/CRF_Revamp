@@ -1,287 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/hamburger.css">
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/carousel.css">
-    <link rel="stylesheet" href="/css/footer.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cave Research Foundation</title>
-</head>
-<body>
-    <div class="off-screen-menu">
-        <ul>
-            <div class="off-screen-links-container">
-                <div class="off-screen-links-group" id="get-involved">
-                    <h1 class="off-screen-h1">Get Involved</h1>
-                    <a href="/pages/get-involved/operations.html">Operations Areas</a>
-                    <a href="/pages/get-involved/membership.html">Membership</a>
-                </div>
-                <div class="off-screen-links-group" id="about-crf">
-                    <h1 class="off-screen-h1">About CRF</h1>
-                    <a href="/pages/about-crf/whatwedo.html">What we do</a>
-                    <a href="/pages/about-crf/officers.html">Officers</a>
-                </div>
-                <div class="off-screen-links-group" id="resources">
-                    <h1 class="off-screen-h1">Resources</h1>
-                    <div class="resources-group-groups">
-                        <div class="resources-group">
-                            <a href="/pages/resources/business.html">Business Page</a>
-                            <a href="https://cavebooks.com">Cave Books</a>
-                            <a href="">Member Login</a>
-                        </div>
-                        <div class="resources-group">
-                            <a href="/pages/about-crf/photos.html">Photos</a>
-                            <a href="/pages/resources/donate.html">Donate</a>
-                            <a href="/pages/resources/grants.html">Grants</a>
-                        </div>
-                    </div>
 
-                </div>
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/css/static.css" />
 
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Off-screen menu -->
+    <div class="off-screen-menu" aria-hidden="true">
+      <ul>
+        <div class="off-screen-links-container">
+          <span class="nav-close">X</span>
+          <div class="off-screen-links-group" id="get-involved">
+            <h1 class="off-screen-h1">Get Involved</h1>
+            <a href="/pages/get-involved/operations.html">Operations Areas</a>
+            <a href="/pages/get-involved/membership.html">Membership</a>
+          </div>
+          <div class="off-screen-links-group" id="about-crf">
+            <h1 class="off-screen-h1">About CRF</h1>
+            <a href="/pages/about-crf/whatwedo.html">What we do</a>
+            <a href="/pages/about-crf/officers.html">Officers</a>
+          </div>
+          <div class="off-screen-links-group" id="resources">
+            <h1 class="off-screen-h1">Resources</h1>
+            <div class="resources-group-groups">
+              <div class="resources-group">
+                <a href="/pages/resources/business.html">Business Page</a>
+                <a href="https://cavebooks.com">Cave Books</a>
+                <a href="">Member Login</a>
+              </div>
+              <div class="resources-group">
+                <a href="/pages/about-crf/photos.html">Photos</a>
+                <a href="/pages/resources/donate.html">Donate</a>
+                <a href="/pages/resources/grants.html">Grants</a>
+              </div>
             </div>
-        </ul>
+          </div>
+        </div>
+      </ul>
     </div>
-    <nav class="navbar">
+
+    <!-- === Navbar over Image === -->
+    <div class="nav-img">
+      <nav class="navbar">
         <div class="nav_left">
-            <div class="logo_container">
-                <a href="index.html"><img id="logo_img" src="/images/logo.gif" alt=""></a>
-            </div>
+          <div class="logo_container">
+            <a href="/pages/index.html"
+              ><img id="logo_img" src="/images/logo.gif" alt=""
+            /></a>
+          </div>
         </div>
+
         <div class="nav_right">
-            <div class="links-group">
-                <div class="nav_links">
-                    <div class="dropdown">
-                        <a class="drop-link">Get Involved</a>
-                        <div class="dropdown-content" id="get-involved">
-                            <a href="/pages/get-involved/operations.html">Operations Areas</a>
-                            <a href="/pages/get-involved/membership.html">Membership</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a class="drop-link">About CRF</a>
-                        <div class="dropdown-content">
-                            <a href="/pages/about-crf/whatwedo.html">What We Do</a>
-                            <a href="/pages/about-crf/officers.html">Officers</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a class="drop-link">Resources</a>
-                        <div class="dropdown-content" id="resources">
-                            <a href="/pages/resources/business.html">Business Page</a>
-                            <a href="https://www.cavebooks.com/">Cave Books</a>
-                            <a href="/pages/resources/grants.html">Grants</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a class="drop-link" href="/pages/about-crf/photos.html">Photos</a>
-                    </div>
-                    <div class="fin-group">
-                        <div class="dropdown">
-                            <a class="drop-link" href="/pages/resources/donate.html">Donate</a>
-                            </div>
-                            <div class="member_login">
-                                <a href="//">Member Login</a>
-                            </div>
-                        </div>
-                        
-                    </div>
+          <div class="links-group">
+            <div class="nav_links">
+              <div class="dropdown">
+                <a class="drop-link">Get Involved</a>
+                <div class="dropdown-content" id="get-involved">
+                  <a href="/pages/get-involved/operations.html"
+                    >Operations Areas</a
+                  >
+                  <a href="/pages/get-involved/membership.html">Membership</a>
                 </div>
-            </div>
-            <div class="ham-menu" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+              </div>
 
-    <div class="slideshow-container">
+              <div class="dropdown">
+                <a class="drop-link">About CRF</a>
+                <div class="dropdown-content">
+                  <a href="/pages/about-crf/whatwedo.html">What We Do</a>
+                  <a href="/pages/about-crf/officers.html">Officers</a>
+                </div>
+              </div>
 
-        <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/1.jpg" style="width:100%" decoding="async">
-        </div>
-        
-        <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/2.jpg" style="width:100%" loading="lazy" decoding="async">
-        </div>
-        
-        <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/3.jpg" style="width:100%" loading="lazy" decoding="async">
-        </div>
+              <div class="dropdown">
+                <a class="drop-link">Resources</a>
+                <div class="dropdown-content" id="resources">
+                  <a href="/pages/resources/business.html">Business Page</a>
+                  <a href="https://www.cavebooks.com/">Cave Books</a>
+                  <a href="/pages/resources/grants.html">Grants</a>
+                </div>
+              </div>
 
-        <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/4.jpg" style="width:100%" loading="lazy" decoding="async">
-        </div>
+              <div class="dropdown">
+                <a class="drop-link" href="/pages/about-crf/photos.html"
+                  >Photos</a
+                >
+              </div>
 
-        <div class="mySlides fade">
-            <img class="carousel-img" src="/images/index/carousel/5.jpg" style="width:100%" loading="lazy" decoding="async">
-        </div>
+              <div class="fin-group">
+                <div class="dropdown">
+                  <a class="drop-link" href="/pages/resources/donate.html"
+                    >Donate</a
+                  >
+                </div>
+                <div class="member_login">
+                  <a href="//">Member Login</a>
+                </div>
+              </div>
+            </div>
+            <!-- /.nav_links -->
+          </div>
+          <!-- /.links-group -->
 
-        <br>
-        
-        <div style="text-align:center">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
+          <div class="ham-menu"><span></span><span></span><span></span></div>
+        </div>
+        <!-- /.nav_right -->
+      </nav>
 
+      <!-- Hero Section -->
+      <div class="hero-container">
+        <div class="hero-overlay">
+          <img src="/images/logotest.png" alt="CRF logo" />
+          <div class="hero-text">
+            <div class="hero-keywords">
+              Research &middot; Preserve &middot; Protect
+            </div>
+            <p class="hero-subtext">
+              The Cave Research Foundation is a private, non-profit organization
+              dedicated to advancing the study, management, and interpretation
+              of caves and karst. Through partnerships and exploration, we work
+              to ensure the long-term conservation of these vital ecosystems.
+            </p>
+          </div>
         </div>
-    </div>
-    <div class="our-mission">
-        <div class="our-mission-content">
-            <!-- <h1 id="our-mission-h1" class="h1">OUR MISSION</h1> -->
-            <div class="mission-texts">
-                <div class="missions-h2">
-                    <h2 class="h2">The Cave Research Foundation is a private, non-profit organization dedicated to:</h2>
-                </div>
-                <div class="missions-p">
-                    <div class="paragraph">Facilitating research, management and interpretation of caves and karst resources.</div>
-                    <div class="paragraph">Forming partnerships to study, protect and preserve cave resources and karst areas.</div>
-                    <div class="paragraph">Promoting the long-term conservation <br> of caves and karst ecosystems.</div>
-                </div>
-            </div>
-        </div>            <!-- <img src="/images/index/mission-background.jpg" alt=""> -->
-    </div>
-    <div class="main-container">
-        <div class="news-popup">
-        </div>
-        <div id="panel" class="cri-panel">
-            <div class="cri-img">
-                <img src="/images/index/CRI.png" alt="">
-            </div>
-            <div class="cri-text">
-                <div class="cri-h1">
-                    <h1 id="crih1" class="h1">Conservation</h1>
-                    <h1 id="crih1" class="h1">Research</h1>
-                    <h1 id="crih1" class="h1">Interpretation</h1>
-                </div>
-                <h3 class="cri-h3">Since 1957</h3>
-            </div>
-        </div>
-        <div id ="panel" class="eao">
-            <div class="eao-lPanel">
-                <div class="eao-tlPanel">
-                    <div class="eao-h1">
-                        <h1 id="eaoh1" class="h1">Education</h1>
-                        <h1 id="eaoh1" class="h1">and</h1>
-                        <h1 id="eaoh1" class="h1">Outreach</h1>
-                    </div>
-                </div>
-                <div class="eao-blPanel">
-                    <div class="eao-p">
-                        <p>CRF is committed to providing educational
-                            outreach to encourage awareness of cave-science,
-                            conservation, and caving safety to school-age 
-                            children.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="eao-rPanel">
-                <div class="eao-trPanel">
-                    <div class="eao-img">
-                        <img src="/images/index/eao.jpg" alt="">
-                    </div>
-                </div>
-                <div class="eao-brPanel">
-                    <button class="eao-btn" role="button">Learn More</button>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <div class="hotlinks-container">
-        <div class="container-one">
-            <h1 id="h1-title">STAY CONNECTED</h1>
-            <div class="description">
-                <p>Download our quarterly CRF Newsletters</p>
-                <button class="hotlinks-btn">Downloads</button>
-            </div>
-        </div>
-        <div class="container-two">
-            <h1 id="h1-title">SUPPORT CRF</h1>
-            <div class="description">
-                <p>Donate to help support CRF and our mission</p>
-                <button class="hotlinks-btn">Donate now!</button>
-            </div>
-        </div>
-        <div class="container-three">
-            <h1 id="h1-title">CONTACT US</h1>
-            <div class="description">
-                <p>Send us a message here!</p>
-                <button class="hotlinks-btn">Contact Us</button>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <div class="footer-container">
+    <div class="main-body">
+      <div class="main-container">
+        <div class="cri-container">
+          <div class="cri-left-panel">
+            <img src="/images/index/CRI-collage-transparent.png" alt="" />
+          </div>
+          <div class="cri-right-panel">
+            <div class="cri-right-top">
+              <span><b>Since 1957</b></span>
+              <h1 class="cri-h1">Conservation, Research, Interpretation</h1>
+            </div>
+            <div class="cri-right-bottom">
+              <p class="cri-subtext">
+                The Cave Research Foundation (CRF) is dedicated to exploring,
+                studying, and preserving the remarkable cave and karst
+                landscapes of the United States. Founded in 1957 by pioneering
+                explorers in the Mammoth Cave region of Kentucky, CRF has grown
+                into a national organization supporting scientific research,
+                resource management, and education across multiple parks and
+                public lands. Through sustained partnerships with the National
+                Park Service, U.S. Forest Service, and other agencies, CRF teams
+                conduct fieldwork, mapping, biological studies, and
+                environmental monitoring to advance understanding of underground
+                ecosystems.<br /><br />
+                Our mission extends beyond exploration - we strive to protect
+                fragile cave environments and share their scientific and
+                cultural significance with the public. By combining the spirit
+                of discovery with a commitment to conservation and
+                interpretation, the Cave Research Foundation continues to
+                illuminate the hidden world beneath us and safeguard it for
+                future generations.
+              </p>
+              <button class="cri-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="eao-container">
+          <div class="eao-left-panel">
+            <div class="eao-left-top">
+              <div class="eao-h1">Education and Outreach</div>
+            </div>
+            <div class="eao-left-bottom">
+              <p class="eao-subtext">
+                The Cave Research Foundation promotes awareness of cave science,
+                conservation, and safety through engaging educational programs.
+                Partnering with the CaveSim Project, CRF brings an interactive,
+                mobile cave experience to schools and community events
+                nationwide. Students explore a realistic simulated cave, gaining
+                a deeper appreciation for underground environments and the
+                importance of protecting these fragile natural systems.
+              </p>
+            </div>
+          </div>
+          <div class="eao-right-panel">
+            <img src="/images/index/eao-collage-transparent.png" alt="" />
+          </div>
+        </div>
+        <!-- === Engage Section: Donate / Newsletter / Contact === -->
+        <section class="engage-container" id="engage">
+          <div class="engage-grid">
+            <!-- Donate Card -->
+            <article class="engage-card donate-card">
+              <div class="engage-top">
+                <i class="fa fa-heart engage-icon" aria-hidden="true"></i>
+                <h2 class="engage-title">Support Our Work</h2>
+                <p class="engage-text">
+                  Your gift fuels exploration, research, and conservation in
+                  caves and karst across the U.S.
+                </p>
+                <small class="engage-note">
+                  CRF is a 501(c)(3). Contributions may be tax-deductible.
+                </small>
+              </div>
+              <div class="engage-bottom">
+                <a class="engage-cta" href="/pages/resources/donate.html"
+                  >Donate Now</a
+                >
+              </div>
+            </article>
+
+            <!-- Newsletter Card -->
+            <article class="engage-card newsletter-card">
+              <div class="engage-top">
+                <i class="fa fa-envelope engage-icon" aria-hidden="true"></i>
+                <h2 class="engage-title">Quarterly Newsletter</h2>
+                <p class="engage-text">
+                  Field notes, discoveries, and highlights. Download the
+                  quarterly CRF Newsletters.
+                </p>
+              </div>
+              <div class="engage-bottom">
+                <a class="engage-cta" href="/pages/resources/newsletters.html">
+                  View Newsletters
+                </a>
+              </div>
+            </article>
+
+            <!-- Contact Card -->
+            <article class="engage-card contact-card">
+              <div class="engage-top">
+                <i class="fa fa-comments engage-icon" aria-hidden="true"></i>
+                <h2 class="engage-title">Contact Us</h2>
+                <p class="engage-text">
+                  Questions, partnerships, or media requests? We'd love to hear
+                  from you.
+                </p>
+                <ul class="contact-list">
+                  <li>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    info@caveresearch.org
+                  </li>
+                  <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Cave Research Foundation, KY
+                  </li>
+                </ul>
+              </div>
+              <div class="engage-bottom">
+                <a class="engage-cta" href="/pages/resources/contact.html">
+                  Get in Touch
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <!-- Footer -->
+      <div class="footer-container">
         <div class="h1-container">
-            <h1>CAVE RESEARCH FOUNDATION</h1>
+          <h1>CAVE RESEARCH FOUNDATION</h1>
         </div>
         <div class="links-container">
-            <div class="left-links">
-                <span>[CRF Address]</span>
-                <span>[Phone Num.]</span>
-                <span>[Social Media]</span>
-                <span>[Copyright Info]</span>
-                <span>[CRF is a 503...]</span>
+          <div class="left-links">
+            <span>[CRF Address]</span>
+            <span>[Phone Num.]</span>
+            <span>[Social Media]</span>
+            <span>[Copyright Info]</span>
+            <span>[CRF is a 503...]</span>
+          </div>
+          <div class="right-links">
+            <div class="column-one">
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Donate</a>
+              <a href="">Grants</a>
             </div>
-            <div class="right-links">
-                <div class="column-one">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Donate</a>
-                    <a href="">Grants</a>
-                </div>
-                <div class="column-two">
-                    <a href="">Photos</a>
-                    <a href="">Operations</a>
-                    <a href="">Cave Books</a>
-                    <a href="">Membership</a>
-                </div>
+            <div class="column-two">
+              <a href="">Photos</a>
+              <a href="">Operations</a>
+              <a href="">Cave Books</a>
+              <a href="">Membership</a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <script>
-      // Carousel: Same visuals, cleaner loop.
-      let slideIndex = 0;
-
-      function showSlide(n) {
-        const slides = document.getElementsByClassName("mySlides");
-        const dots = document.getElementsByClassName("dot");
-
-        // guard
-        if (!slides.length) return;
-
-        // hide all
-        for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
-        for (let i = 0; i < dots.length; i++) dots[i].classList.remove("active");
-
-        // show current
-        slides[n].style.display = "block";
-        if (dots[n]) dots[n].classList.add("active");
-      }
-
-      function nextSlide() {
-        const slides = document.getElementsByClassName("mySlides");
-        if (!slides.length) return;
-        slideIndex = (slideIndex + 1) % slides.length;
-        showSlide(slideIndex);
-      }
-
-      // Initialize and start
-      showSlide(slideIndex);
-      // Change image every 10 seconds
-      setInterval(nextSlide, 10000);
-    </script>
     <script src="/js/app.js" defer></script>
-
-</body>
+  </body>
 </html>
