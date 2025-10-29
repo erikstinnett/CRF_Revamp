@@ -14,7 +14,8 @@ body {
   font-size: 1rem;
   color: var(--color-text);
   line-height: 1.6;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/topography-background.png') center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/topography-background.png") center/cover fixed no-repeat;
 }
 
 .main-container {
@@ -66,7 +67,7 @@ body {
 .seqAndKings-ops-container:nth-of-type(4),
 .northwest-ops-container:nth-of-type(5),
 .misc-ops-container:nth-of-type(6) {
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .operations-h1 {
   font-family: var(--font-serif);
@@ -105,7 +106,7 @@ body {
   background-color: #ffffff;
   padding: var(--spacing);
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .project-header {
   font-family: var(--font-serif);

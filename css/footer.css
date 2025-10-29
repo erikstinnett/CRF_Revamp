@@ -1,122 +1,146 @@
-:root {
-    --color-bg: #fff6ea;
-    --color-text: #333333;
-    --color-primary: #caac0e;
-    --color-secondary: #678ba6;
-    --max-width: 1200px;
-    --spacing: 1rem;
-    --font-sans: 'Helvetica Neue', Arial, sans-serif;
-    --font-serif: 'Times New Roman', Times, serif;
-    --gutter: 1rem;
-    --overlay: rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Global reset */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Base typography & body */
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    color: var(--color-text);
-    line-height: 1.6;
-    background: linear-gradient(var(--overlay), var(--overlay)),
-                url('/images/topography-background.png') center/cover fixed no-repeat;
-  }
-  
-  /* Header section */
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: var(--spacing);
-  }
-  .header-container .img-container {
-    width: 100%;
-    max-height: 60vh;
-    overflow: hidden;
-  }
-  .header-container .img-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  #header-h1 {
-    margin: var(--spacing) 0;
-    font-family: var(--font-serif);
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    letter-spacing: 4px;
-    text-align: center;
-    color: var(--color-text);
-    width: 100%;
-  }
-  
-  /* Body content */
-  .body-container {
-    width: 100%;
-    max-width: 70ch;
-    margin: var(--spacing) auto;
-  }
-  .body-text {
-    font-size: clamp(1rem, 3vw, 1.4rem);
-    line-height: 1.8;
-  }
-  
-  /* Footer section */
+/* ====== Footer ====== */
+.footer-container {
+  background-color: #2e3531; /* your CRF green */
+  color: #f3e7c7; /* warm tan text for contrast */
+  padding: 60px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+}
+
+/* Main title */
+.footer-container .h1-container h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  color: #f3e7c7;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* Link layout wrapper */
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: 100%;
+  gap: 2rem;
+  border-top: 1px solid rgba(243, 231, 199, 0.3);
+  padding-top: 2rem;
+}
+
+/* Left side info */
+.left-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.left-links span {
+  opacity: 0.9;
+}
+
+/* Right side links */
+.right-links {
+  display: flex;
+  gap: 4rem;
+  text-align: left;
+}
+
+.right-links a {
+  display: block;
+  color: #f3e7c7;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.right-links a:hover {
+  color: #c9b98a; /* lighter tan hover */
+}
+
+/* Column groupings */
+.column-one,
+.column-two {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Copyright / footer bottom */
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+/* ====== Footer (mobile responsive) ====== */
+@media (max-width: 640px) {
   .footer-container {
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                url('/images/index/mission-background.jpg') center/cover no-repeat;
-    color: #fff;
-    padding: calc(var(--spacing) * 2) var(--spacing);
-  }
-  .footer-container .h1-container {
+    color: #f3e7c7; /* tan text */
+    padding: 48px 20px 24px;
     text-align: center;
-    margin-bottom: var(--spacing);
-  }
-  .footer-container .h1-container h1 {
-    font-family: var(--font-serif);
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
-    margin: 0;
-    color: #fff;
-  }
-  .footer-container .links-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: var(--gutter);
-  }
-  .footer-container .left-links,
-  .footer-container .right-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .footer-container .right-links {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  .footer-container .right-links .column-one,
-  .footer-container .right-links .column-two {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .footer-container a,
-  .footer-container span {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  .footer-container a:hover {
-    color: #caac00;
   }
 
-  
+  /* Title */
+  .footer-container .h1-container h1 {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Stack all link areas */
+  .links-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-top: 1px solid rgba(243, 231, 199, 0.3);
+    padding-top: 1.5rem;
+  }
+
+  /* Left info (address, phone, etc.) */
+  .left-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Right links stacked */
+  .right-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .right-links a {
+    color: #f3e7c7;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .right-links a:hover {
+    color: #c9b98a;
+  }
+
+  /* Footer bottom line */
+  .footer-bottom {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+
+  /* Optional: icon sizing */
+  .left-links i {
+    font-size: 1.1rem;
+    margin: 0 4px;
+  }
+}
